@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="fabricacion_category" model="ir.module.category">
+        <field name="name">Permisos Avicampo Extended</field>
+        <field name="sequence">1</field>
+    </record>
+    <record id="fabricacion_group_inherit" model="res.groups">
+        <field name="name">Permisos para producir mas de 30 mil Kilos</field>
+        <field name="category_id" ref="avicampo_extended.fabricacion_category"/>
+    </record>
+
+    <record id="account_payment_button_cancel_hide" model="res.groups">
+        <field name="name">Permisos para mostrar el boton de cancelar en pagos</field>
+        <field name="category_id" ref="avicampo_extended.fabricacion_category"/>
+    </record>
+
+
+
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="account_payment_hide_button_cancel_inherit" model="ir.ui.view">
+        <field name="name">account.payment</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="l10n_mx_einvoice_payment.view_account_payment_form_cfdi_pagos_cancel"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='cancel'][2]" position="attributes">
+                <attribute name="groups">avicampo_extended.account_payment_button_cancel_hide</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
